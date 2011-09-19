@@ -57,6 +57,11 @@ io.configure(function () {
   io.set("polling duration", 10);
 });
 
+// respond to POST /home
+app.post('/home', function(request, response) {
+  app.get('/home', request, response);
+}
+
 // respond to GET /home
 app.get('/home', function(request, response) {
 
