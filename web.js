@@ -132,6 +132,6 @@ app.get('/home', function(request, response) {
 
 // respond to POST /home
 app.post('/', function(request, response) {
-  response.redirect('/');
+  response.redirect('/home');
 });
 
